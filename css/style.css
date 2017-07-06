@@ -1,0 +1,243 @@
+body{
+    background: #fffcf9;
+}
+
+clearfix:after, .clearfix:before {
+    content: ''; 
+    clear: both; 
+    display: block;
+}
+
+/* RESPONSIVE PICTURES */
+img {
+    max-width: 100%;
+    height: auto; /* old browsers */
+    vertical-align: top; /* aby se netvorila mezera navic
+    pod obrazkem 3px v zakl. */
+}
+
+/* ---------------------- ADMIN ICON */
+.admin {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    z-index: 5000;
+    text-decoration: none;
+    color: #816c57;
+}
+
+.admin:hover {
+    color: #26201a;
+}
+
+/* ----------------------- TITLES */
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+h2 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 23px;
+}
+
+.up {
+    color: #816c57;
+    background: #e5c09b;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 39px;
+    right: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.up:hover {
+    color: #e5c09b;
+    background: #816c57;
+}
+
+a {
+    -webkit-transition: all 0.3s ease-out; /*chrome,safari*/
+    -o-transition: all 0.3s ease-out; /*opera*/
+    -ms-transition: all 0.3s ease-out; /*ie*/
+    -moz-transition: all 0.3s ease-out; /*mozilla*/
+    transition: all 0.3s ease-out;
+}
+
+.container {
+    position: relative;
+    padding: 0;
+    width: 1000px;
+    margin: 50px auto;
+}
+
+header {
+    position: relative;
+    height: 300px;   
+    background: #e5c09b; 
+}
+
+.logo {
+    display:block;
+    background: url("../images/foto3.jpg") top no-repeat;
+    height: 250px;
+}
+
+.logo2 {
+    position: absolute;
+    font-family: 'Slabo 27px', serif;
+    font-size: 70px;
+    padding: 50px 40px;
+    color: #fcf5e8;
+    top: 24px;
+    left: 35px;
+}
+
+/* ------------------- MENU */
+.nav ul {     
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {     
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+}
+
+.nav ul li a {
+    display: block;
+    font-size: 25px;
+    line-height: 50px;
+    text-decoration: none;   
+    color: #816c57;
+    text-transform: uppercase;
+    padding: 0 28px;
+    background: #e5c09b; 
+}
+
+
+.nav ul li:hover a {
+    color: #e5c09b;
+    background:#816c57;
+}
+
+.current-menu-item a {
+    transition: none;
+    background: #816c57;
+    color: #e5c09b !important;
+    background: #816c57 !important;
+}
+
+/* ------------------- SECTION */
+section {
+    color: #44392e;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    background: #fcf5e8;
+    margin-top: 10px;
+    padding: 20px 30px;
+}
+
+/* -------------------- PAGE ABOUT US */
+.nahled {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nahled img {
+    padding: 0 10px;
+    margin: 5px;
+}
+
+footer {
+    margin-top: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #72604d;
+}
+
+/* -------------------- PAGE 404 */
+.center {
+    text-align: center;
+}
+.center h1 {
+    margin-bottom: 10px;
+}
+
+.center img {
+    width: 300px;
+}
+
+.err {
+    font-size: 25px;
+    color: #816c57;
+    background: #e5c09b;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.err:hover {
+    color: #e5c09b;
+    background: #816c57;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 479px){
+    .container { width: 92%;}
+    iframe { width: 92%;}
+}
+
+@media screen and (min-width: 480px){
+    .container { width: 95%;}
+    iframe { width: 95%;}
+}
+
+@media screen and (min-width: 740px){
+    .container { width: 95%}
+    iframe { width: 95%}
+}
+
+@media screen and (min-width: 960px) {
+    .container { width: 960px;}
+    iframe { width: 95%;}
+}
+
+@media screen and (min-width: 1015px) {
+    .container { width: 1000px; }
+}
+
+@media screen and (max-width: 1014px) {
+    .nav ul li { display: block;}
+    .nav ul li a { display: block; }
+}
+
+@media screen and (max-width: 1014px) {
+    .logo2 {width: 57%; padding: 0; margin: 0;}
+    header { height: 500px; }
+} 
+
+@media screen and (max-width: 960px) {
+    .logo2 {width: 50%; padding: 0; margin: 0; font-size: 30px;}
+}
+
+@media screen and (max-width: 925px){
+    .logo2 {width: 50%; padding: 0; margin: 0; font-size: 30px;}
+}
+
+@media screen and (max-width: 870px){
+    .logo2 {width: 45%; padding: 0; margin: 0; font-size: 30px;}
+}
+
+@media screen and (max-width: 790px){
+    .logo2 {width: 42%; padding: 0; margin: 0; font-size: 30px;}
+}
+
+@media screen and (max-width: 750px){
+    .logo2 {float: none; padding: 0; margin: 0; font-size: 25px; display: block; }
+}

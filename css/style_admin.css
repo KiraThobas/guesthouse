@@ -1,0 +1,224 @@
+/* ADMIN CSS */
+body {
+    background: #edf7f6;
+}
+#log, #mess, #help, #adminw, a {
+    -webkit-transition: all 0.3s ease-out; /*chrome,safari*/
+    -o-transition: all 0.3s ease-out; /*opera*/
+    -ms-transition: all 0.3s ease-out; /*ie*/
+    -moz-transition: all 0.3s ease-out; /*mozilla*/
+    transition: all 0.3s ease-out;
+}
+
+h1, h1 a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 30px;
+}
+
+h2 {
+    color: #004b44;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+h3 {
+    color: #004b44;
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.seznam_lines li {
+    margin: 15px 0;
+}
+
+#container {
+    width: 900px;
+    margin: auto;
+}
+
+header {
+    height: 50px;
+}
+
+.upozorneni {
+    text-align: center;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+section {
+    padding: 20px;
+    padding-top: 0;
+    background: #f9fdfc;
+    position: relative;
+    margin-top: 10px; 
+    min-height: 300px;
+}
+
+#first {
+    text-align: center;
+    padding: 150px;
+}
+
+.polozky {
+   width: 190px;
+   padding: 10px;
+   position: relative;
+}
+
+.polozky h2 {
+    text-align: center;
+}
+
+.help, .mess, .part {
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+#editMenu {
+    padding: 10px 0;
+    list-style: none;
+    margin: 10px;
+}
+
+#editMenu li a {
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+#editMenu li a:hover {
+    color: #4cb5ab;
+}
+
+#cross:hover i, #g_cross:hover i {
+    color: red;
+}
+
+#log, #mess, #help, #adminw {
+    z-index: 5000;
+    position: fixed;
+    right: 0;
+    width: 40px;
+    height: 30px;
+    border-radius: 25px 0 0 25px;
+}
+
+#adminw {
+    background: #32ab9f url("../images/admin.png") 10px center no-repeat;
+    top: 60px;
+}
+
+#mess {
+    background: #32ab9f url("../images/mess.png") 10px center no-repeat;
+    top: 60px;
+}
+
+#help {
+    background: #32ab9f url("../images/help.png") 10px center no-repeat;
+    top: 100px;
+}
+
+#log {
+    background: #32ab9f url("../images/logout.png") 10px center no-repeat;
+    top: 140px;
+}
+
+#log:hover, #mess:hover, #help:hover, #adminw:hover {
+    width: 140px;  
+    background-position: -50px;
+}
+
+#log a, #mess a, #help a, #adminw a {
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    width: 130px; /* use pixels, % doesn't wrap text */
+    float: right;
+}
+
+#log:hover a, #mess:hover a, #help:hover a, #adminw:hover a {
+    opacity: 1;
+}
+
+
+#mceu_11 {
+    display: none;
+}
+
+/* MESSAGES */
+.messBox {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.messBody {
+    padding: 5px;
+    border-bottom: 1px dashed #000;
+}
+
+.messBody:last-child {
+    border-bottom: none;
+}
+
+.date {
+    font-style: italic;
+}
+
+.name, .surname, .email {
+    font-weight: bold;
+}
+
+.email a {
+    text-decoration: none;
+    color: #004b44;
+}
+
+.email a:hover {
+    color: #4cb5ab;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 479px){
+    #container { width: 92%;}
+    section { margin-top: 50px;}
+    
+}
+
+@media screen and (min-width: 480px){
+    #container { width: 93%}
+}
+
+@media screen and (min-width: 740px){
+    #container { width: 95%}
+    
+}
+
+@media screen and (min-width: 960px) {
+    #container { width: 960px;}
+    
+}
+
+@media screen and (min-width: 1015px) {
+    #container { width: 900px; }
+    
+}
+
+@media screen and (min-width: 1350px) {
+    #container { width: 900px; }
+    .polozky {  width: auto; background: #4cb5ab; position: absolute; padding: 10px; left: -220px; top: 0; max-width: 211px; min-height: 300px;}
+    #editMenu { padding: 10px 0; list-style: none; margin: 10px; }
+    #editMenu li a { color: #fff; text-decoration: none; }
+    #editMenu li a:hover { color: #004b44; }
+}
+
